@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>while</title>
+</head>
+<body>
+	<script>
+		var x=1; // 전역변수
+        var sum=0;
+        
+        while(1) {
+			if(x % 3 ==0){
+				sum += x;
+			}
+			if(x == 100)
+			break;
+			x++;
+		}
+		document.write("1~100까지 수 중에서 3의 배수의 합 : <b>" + sum + "</b><p/>");
+	</script>
+</body>
+</html>
