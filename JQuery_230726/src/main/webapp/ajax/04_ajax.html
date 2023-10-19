@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AJAX 통신</title>
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script>
+ $(document).ready(function() {
+	$("#addMenuButton").click(function() {
+		var menuName=$("#menuName").val();
+		$("#menuList").append(`<li>${menuName}</li>`);
+		
+		$("#menuName").val(""); //입력필드 초기화
+	});//sendButton
+});//document
+</script>
+
+ 	<style>
+      #result {
+        font-weight: bold;
+        font-size: 24pt;
+      }
+    </style>
+
+</head>
+<body>
+   <h2>메뉴 등록</h2>
+    <input type="text" id="menuName" placeholder="메뉴 이름" />
+    <p></p>
+    <button id="addMenuButton">메뉴 추가</button>
+    <hr />
+    <h3>등록된 메뉴:</h3>
+    <ul id="menuList"></ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

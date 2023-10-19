@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery</title>
+<script src="../script/jquery-3.7.1.min.js"></script>
+ 
+
+<script>
+	$(function () {
+		$("button").on("click",function(){
+			$("li:has(span)").text(
+					"오늘의 점심 메유로 선택되었습니다(오징어 불고기)"
+		  );
+		});
+	});	
+	
+</script>
+
+ 
+
+</head>
+<body>
+	<h1>선택한 요소의 필터링</h1>
+    <ul>
+      <li>라면</li>
+      <li><span>오징어 불고기</span></li>
+      <li>삼겹살</li>
+    </ul>
+    <button>필터링</button>
+</body>
+</html>

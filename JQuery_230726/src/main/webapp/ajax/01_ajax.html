@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AJAX 통신</title>
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function() {
+	$("#loadButton").click(function() {
+		$.ajax({
+			url:"list_ajax.html",
+			type:"GET",
+			success:function(result){
+				$("#result").html(result);
+			}, //success
+			error:function(error){
+				console.log('Error ${error}');
+			}
+		});//ajax
+	});//loadButton
+});//ready
+</script>
+
+</head>
+<body>
+<h2>AJAX 통신 예제</h2>
+<button id="loadButton">데이터 불러오기</button>
+<p></p>
+<div id="result"></div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery</title>
+<script src="../script/jquery-3.7.1.min.js"></script>
+
+
+<script>
+$(document).ready(function () {
+	  var xWidth = 100;
+      var yheight = 100;
+      $("div").click(function() {
+    	  $(this).width(xWidth).addClass("box");
+    	  $(this).height(yheight).addClass("box");
+    	  xWidth = xWidth - 10;
+          yheight = yheight - 10;		
+	})
+      
+  });
+	
+</script>
+
+ <style>
+      div {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 5px;
+        background: yellow;
+      }
+
+      .box {
+        background: blue;
+      }
+    </style>
+
+</head>
+<body>
+	<div>박스1</div>
+    <div>박스2</div>
+    <div>박스3</div>
+    <div>박스4</div>
+    <div>박스5</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery</title>
+<script src="../script/jquery-3.7.1.min.js"></script>
+
+
+<script>
+	$(function () {
+		$("button").on("click",function(){
+			$(":checked").next().text("현재 수강신청 완료");
+		});
+	});	
+	
+</script>
+
+
+
+</head>
+<body>
+	<h1>Form 요소의 선택</h1>
+	<form>
+		<input type="checkbox" name="lecture" value="html" /><span>Html</span><br />
+		<input type="checkbox" name="lecture" value="css" /><span>Css</span><br />
+		<input type="checkbox" name="lecture" value="javascript" /><span>Javascript</span><br />
+		<input type="checkbox" name="lecture" value="jquery" checked /><span>Jquery</span>
+		<p></p>
+	</form>
+
+	<button>현재 학습교과목</button>
+</body>
+</html>

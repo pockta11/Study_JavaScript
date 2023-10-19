@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery</title>
+<script src="../script/jquery-3.7.1.min.js"></script>
+
+<script>
+$(document).ready(function () {
+	$("#firstBtn").click(function () {
+	 $("#firstitem").appendTo("#list")
+	});
+	$("#seconBtn").click(function () {
+	 $("#seconitem").appendTo("#list")
+	});
+	$("#thirdBtn").click(function () {
+	 $("#thirditem").appendTo("#list")
+	});
+	
+  });
+	
+</script>
+
+</head>
+<body>
+	<h1>.appendTo() 메소드</h1>
+	<ul id="list">
+		<li id="firstitem">상의</li>
+		<li id="seconitem">하의</li>
+		<li id="thirditem">아우터</li>
+	
+	</ul>
+	<button id="firstBtn">상의 상품추가</button>
+	<button id="seconBtn">하의 상품추가</button>
+	<button id="thirdBtn">아우터 상품추가</button>
+</body>
+</html>

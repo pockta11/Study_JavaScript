@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery</title>
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("button").click(function() {
+			$("p").hide();
+		});
+	});
+</script>
+</head>
+<body>
+	<p>메세지 : 제이쿼리</p>
+	<button>메세지 삭제</button>
+</body>
+</html>
+<!-- $(document).ready: 지연시간이 있어서 다름 script보다 나중에 실행됨
+$(window).on("load") : $(document).ready가 존재해도 코드 순서와 상관 없이 먼저 실행됨 -->

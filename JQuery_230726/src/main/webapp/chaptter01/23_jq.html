@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery</title>
+<script src="../script/jquery-3.7.1.min.js"></script>
+
+<script>
+$(document).ready(function () {
+	$("button").click(function () {
+	 $("<b>여름80%세일 </b>").prependTo(".item");
+	});
+	
+	
+  });
+	
+</script>
+
+</head>
+<body>
+	<h1>.clone() 메소드</h1>
+	<ul >
+		<li class="item">상의</li>
+		<li class="item">하의</li>
+		<li>아우터</li>
+	
+	</ul>
+	<button>세일 상품</button>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AJAX 통신</title>
+<script src="../script/jquery-3.7.1.min.js"></script>
+<script>
+ $(function() {
+	$.ajax({
+		url:"list_ajax.html",
+	    type:"GET",
+	    datatype:"html",
+	    success:function(data){
+	    	console.log(data);
+	    	$("table").html(data); /*테이블에 담기*/
+	    },
+	});//ajax
+});//function
+</script>
+
+</head>
+<body>
+    <form id="frm">
+      <h1>기말고사</h1>
+    </form>
+    <table width="100%" border="1"></table>
+</body>
+</html>

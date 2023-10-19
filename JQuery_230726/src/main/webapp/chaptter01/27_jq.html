@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery</title>
+<script src="../script/jquery-3.7.1.min.js"></script>
+
+<script>
+$(document).ready(function () {
+	$("#slide").click(function() {
+		$("#panel").css("color","red").slideDown(5000).slideUp(3000).fadeTo("slow",0.3); 
+	});
+	
+	
+  });
+	
+</script>
+
+<style>
+#slide, #panel{
+padding: 5px;
+text-align: center;
+background-color: #e5eecc;
+border: 1px solid #c3c3c3;}
+
+#panel {
+padding: 70px;
+display: none;
+background-color: #ffff00;
+font-size:20px
+}
+
+</style>
+
+</head>
+<body>
+	<div id="slide">[오늘이 공지]</div>
+      <div id="panel">10월 20일(금요일) 공지<br>불금하세요<br>10월 20일:SqlD 특강<br>20일 양우석님이 치킨을 쏩니다</div>
+</body>
+</html>

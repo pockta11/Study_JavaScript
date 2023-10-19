@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery</title>
+<script src="../script/jquery-3.7.1.min.js"></script>
+
+
+<script>
+$(document).ready(function () {
+	$("button").click(function () {
+	 $("#list").append("<li>신발</li>")
+	});
+  });
+	
+</script>
+
+</head>
+<body>
+	<h1>.append() 메소드</h1>
+	<ul id="list">
+		<li>상의</li>
+		<li>하의</li>
+		<li>아우터</li>
+	
+	</ul>
+	<button>상품추가</button>
+</body>
+</html>

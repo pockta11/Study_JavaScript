@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery</title>
+<script src="../script/jquery-3.7.1.min.js"></script>
+
+
+<script>
+$(document).ready(function () {
+    $("button").click(function () {
+      $("p").css({ "background-color": "yellow", "font-size": "200%" });
+    });
+
+    $("button").click(function () {
+      $("p.point").css({
+        "background-color": "red",
+        "font-size": "250%",
+        color: "white",
+      });
+    });
+  });
+	
+</script>
+
+</head>
+<body>
+	<p class="point">김치</p>
+    <div>010-007-0070</div>
+    <p>박수</p>
+    <div>010-123-4567</div>
+    <p>최고</p>
+    <div>010-456-9876</div>
+    <button>이름강조</button>
+</body>
+</html>

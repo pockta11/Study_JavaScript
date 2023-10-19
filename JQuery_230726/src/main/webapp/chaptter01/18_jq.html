@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery</title>
+<script src="../script/jquery-3.7.1.min.js"></script>
+
+
+<script>
+$(document).ready(function () {
+	$("#hide").click(function() {
+		$("img").hide("slow");
+	});
+	
+	$("#show").click(function() {
+		$("img").show("fast");
+	});
+	
+	$("#toggle").click(function() {
+		$("img").toggle(3000);
+	});
+	
+	  
+  });
+	
+</script>
+
+
+
+</head>
+<body>
+	<button id="hide">hide</button>
+	<button id="show">show</button>
+	<button id="toggle">toggle</button><br><br>
+	<p></p>
+	<img src="../img/sul1.png" name="pic2" />
+</body>
+</html>
